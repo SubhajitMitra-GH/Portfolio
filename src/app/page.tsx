@@ -1,10 +1,9 @@
 "use client";
 
-import React, { useEffect, useRef } from "react";
-import { motion,useAnimation } from "framer-motion";
+import React, { useEffect, useRef,useState } from "react";
+import { motion } from "framer-motion";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
-import ModeToggle from "@/components/ui/darkmode-toggle";
 import { AuroraBackground } from "@/components/ui/aurora-background";
 import Image from "next/image";
 import { Typewriter } from "react-simple-typewriter";
@@ -42,22 +41,22 @@ import {
   SiNextdotjs,
   SiTypescript,
   SiGnubash,
-  SiCss3,
+
   SiGnubash as SiGsap,
   SiVsco,
 } from "react-icons/si";
-import { TbBrandGmail } from "react-icons/tb";
+
 import { GiArtificialIntelligence } from "react-icons/gi";
 import { BentoGridThirdDemo } from "@/components/BentoGrid";
 import { FloatingDockDemo } from "@/components/Dock";
-import { useInView } from "react-intersection-observer";
+
 
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Page() {
   const bgRef = useRef(null);
    const isMobile = useIsMobile();
-     
+  
 
   useEffect(() => {
 
@@ -120,6 +119,8 @@ const photos = gsap.utils.toArray(".photo").filter(el => el instanceof HTMLEleme
   };
 
   return (
+
+   
     <main>
       
       <NavbarDemo /> 
@@ -342,7 +343,7 @@ const photos = gsap.utils.toArray(".photo").filter(el => el instanceof HTMLEleme
  
 
     </main>
-   
+  
     
   );
 }

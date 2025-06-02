@@ -4,7 +4,6 @@ import React, { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
-import ModeToggle from "@/components/ui/darkmode-toggle";
 import { AuroraBackground } from "@/components/ui/aurora-background";
 import Image from "next/image";
 import { Typewriter } from "react-simple-typewriter";
