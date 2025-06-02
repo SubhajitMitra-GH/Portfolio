@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useRef,useState } from "react";
+import React, { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
@@ -299,7 +299,7 @@ const photos = gsap.utils.toArray(".photo").filter(el => el instanceof HTMLEleme
                   className="photo absolute rounded-4xl w-full h-full flex flex-col justify-center p-8 gap-5"
                   style={glassStyle}
                 >
-                  {section.skills.map(([Icon, label], i) => (
+                  {section.skills.map(([Icon, label],i) => (
                     <div key={i} className="flex items-center gap-4 text-3xl">
                       {Icon}
                       {label}

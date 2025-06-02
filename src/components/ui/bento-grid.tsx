@@ -25,7 +25,6 @@ export const BentoGridItem = ({
   description,
   header,
   icon,
-  src,
   onClick, // <-- make sure this is accepted
 }: {
   className?: string;
