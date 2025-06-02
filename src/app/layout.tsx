@@ -26,6 +26,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
+          <head>
+        <link
+          href="https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap"
+          rel="stylesheet"
+        />
+      </head>
       
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
